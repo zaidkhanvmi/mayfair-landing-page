@@ -240,10 +240,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    /* Align to the left */
     align-items: center;
     overflow: hidden;
-    /* Hide overflow so it doesn't break into a new line */
     gap: 5rem;
     position: relative;
 }
@@ -266,6 +264,85 @@ body {
         transform: translateX(-100%);
     }
 }
+
+.product-page-logo {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.39em 0;
+}
+
+.product-first-section {
+    padding-top: 1rem;
+}
+
+.weight-care-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weight-care-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.weight-care-header span {
+    color: red;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.weight-care-header h1 {
+    color: var(--primary-color);
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.wegovy-product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.first-product {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 28rem;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 1.62em;
+}
+
+.prod-card-image {
+    width: 100%;
+    height: 22rem;
+    max-height: 25rem;
+    overflow: hidden;
+    border-top-left-radius: 1.62em;
+    border-top-right-radius: 1.62em;
+}
+
+.prod-card-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+
+.wegovy-product {}
+
+.mounjaro-product {}
 
 /* ======== Media Queries ======== */
 @media screen and (max-width: 991px) {
@@ -344,5 +421,24 @@ body {
 @media screen and (max-width: 1024px) and (min-width: 992px) {
     .right-hero {
         padding-left: 3rem;
+    }
+
+    .first-product {
+        width: 28rem;
+    }
+
+    .prod-card-image {
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first-product {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .prod-card-image {
+        height: 15rem;
     }
 }
