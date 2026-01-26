@@ -6,9 +6,22 @@
 
 :root {
     --primary-color: #47317c;
+    --subtext: #3f6389;
+    --secondary: #007f4e;
+}
+
+html {
+    font-size: 16px;
 }
 
 /* ========= Global Styles =========== */
+
+body {
+    background-color: white;
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.4;
+    font-size: 1rem;
+}
 
 .global-padding {
     padding-left: 3rem;
@@ -27,14 +40,8 @@
     line-height: 1.5;
 }
 
-/* ========= Global Styles =========== */
 
-body {
-    background-color: white;
-    font-family: Inter, Arial, sans-serif;
-    font-size: 1vw;
-    line-height: 1.4;
-}
+/* ========= Global Styles =========== */
 
 .header-wrapper {
     z-index: 10;
@@ -229,7 +236,7 @@ body {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 4.63em 6.94em;
+    padding: 4.63rem 6.94rem;
 }
 
 .banner-wrapper {
@@ -263,6 +270,10 @@ body {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.product-page {
+    position: relative;
 }
 
 .product-page-logo {
@@ -306,9 +317,9 @@ body {
 
 .wegovy-product-wrapper {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    gap: 1rem;
+    gap: .8rem;
     margin-top: 2rem;
 }
 
@@ -317,11 +328,17 @@ body {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-    width: 28rem;
-    max-width: 100%;
+    width: 100%;
+    max-width: 28rem;
+    box-sizing: border-box;
+    flex-shrink: 1;
     margin: 0 auto;
-    border-radius: 1.62em;
+    border-radius: 1.62rem;
 }
+
+.wegovy-product {}
+
+.mounjaro-product {}
 
 .prod-card-image {
     width: 100%;
@@ -339,12 +356,459 @@ body {
     transition: transform 0.3s ease;
 }
 
+.product-content {
+    border: 1px solid #0f3c6c1a;
+    border-bottom-right-radius: 1.62em;
+    border-bottom-left-radius: 1.62em;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 2.31rem;
+    overflow: hidden;
+}
 
-.wegovy-product {}
+.product-content h3 {
+    color: var(--primary-color);
+    letter-spacing: -.01em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
 
-.mounjaro-product {}
+.product-price-star {
+    margin-top: 0.69em;
+}
+
+.product-price-star p {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 1.04rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.product-price-star div span:first-child {
+    color: #007f4e;
+    margin-right: .5em;
+    font-weight: 600;
+    font-size: 1.04em;
+}
+
+.product-price-star div span:last-child {
+    color: red;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.divider {
+    background-color: #cfd8e2;
+    width: 100%;
+    height: 1px;
+    margin-top: 1.27rem;
+    margin-bottom: 1.45rem;
+}
+
+.after-divider-text p {
+    color: var(--subtext);
+    margin-bottom: 1.16rem;
+}
+
+.prod-benefits {}
+
+.prod-benefits h3 {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 1.04rem;
+    font-weight: 600;
+}
+
+.prod-checklist {
+    grid-column-gap: 1.04em;
+    grid-row-gap: 1.04em;
+    color: var(--subtext);
+    flex-flow: column;
+    margin-top: .69em;
+    display: flex;
+}
+
+.benefit-item {
+    display: flex;
+    gap: .58em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.benefit-icon {
+    color: white;
+    background-color: var(--secondary);
+    border-radius: 100%;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.16em;
+    height: 1.16em;
+    display: flex;
+    padding: .11rem;
+}
+
+.benefit-text {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 1.04rem;
+}
+
+.prod-tabs-wrapper {
+    display: flex;
+    gap: .69em;
+    flex-flow: wrap;
+    margin-top: .23em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.prod-tab {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-size: .93em;
+    padding: .5em 1em;
+    border: 1px solid #e6f3f1;
+    border-radius: 1000px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-tab.active {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.prod-price-wrapper {
+    margin-top: 0.69em;
+    border-top: 1px solid #0f3c6c1a;
+    padding-top: 1.16em;
+}
+
+.prod-price-wrapper h3 {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 1.04em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.prod-price-wrapper div {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.prod-price-wrapper>div span:first-child {
+    color: #007f4e;
+    margin-right: .5em;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.prod-price-wrapper>div span:last-child {
+    color: red;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.prod-btn {
+    margin-top: 1em;
+}
+
+.prod-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6em;
+    padding: .98em 1.85em;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 1000px;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+
+.prod-btn button div {
+    width: 1.3em;
+    display: flex;
+    color: currentColor;
+}
+
+.medication-cta {}
+
+.medication-cta-text {
+    display: flex;
+    background-color: #eff5f5;
+    border-radius: 1.62rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.39rem;
+    padding: 1.85rem 2.6rem;
+}
+
+.medication-cta-text h3 {
+    color: var(--primary-color);
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 1.85rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.medication-cta-text p {
+    text-align: right;
+    font-size: .93em;
+    color: var(--subtext);
+}
+
+.medication-icons-container {
+    display: grid;
+    border: 1px #000;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    margin-top: 3em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.medication-icon-wrapper {
+    grid-row-gap: 8px;
+    color: var(--main-blue);
+    text-align: center;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.med-icon {
+    font-size: 1.5rem;
+    width: 25px;
+    color: var(--primary-color);
+}
+
+.med-icon svg {
+    color: var(--primary-color);
+}
+
+.medication-icon-wrapper p {
+    color: var(--primary-color);
+}
+
+/* ============ GLP Sectio ========= */
+
+.glp-hero {
+    padding: 60px 20px;
+}
+
+.glp-hero-inner {
+    /* max-width: 1200px; */
+    height: 48rem;
+    margin: auto;
+    background: #0f3a63;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/* LEFT CONTENT */
+.glp-hero-content {
+    flex: 1;
+    padding: 48px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.glp-hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.glp-hero-desc {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 24px;
+    max-width: 480px;
+}
+
+.glp-hero-btn {
+    background: #ffffff;
+    color: #0f3a63;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 28px;
+    outline: none;
+}
+
+
+.glp-hero-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.glp-hero-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 14px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+/* SVG wrapper */
+.glp-hero-list li>div {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #092441;
+    border-radius: 50%;
+}
+
+/* SVG itself */
+.glp-hero-list li svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #9be7ff;
+}
+
+/* RIGHT IMAGE */
+.glp-hero-image {
+    flex: 1;
+    height: 100%;
+}
+
+.glp-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ============ Review-Section =========== */
+
+.trustpilot {
+    padding: 4rem 2rem;
+    background: #f3f7f5;
+}
+
+.trustpilot {
+    align-items: center;
+}
+
+.trust-footer-image {}
+
+.trustpilot-header h2 {
+    color: var(--primary-color);
+    letter-spacing: -.01em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 2.31em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.trustpilot-carousel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 72rem;
+    margin: 0 auto 2rem;
+}
+
+/* TRACK */
+.trustpilot-track {
+    display: flex;
+    gap: 1.6rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.trustpilot-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARD SIZE */
+.review-card {
+    background: #fff;
+    padding: 1.8rem;
+    border-radius: 0.8rem;
+    width: 18rem;
+    /* 🔑 fixed width */
+    flex-shrink: 0;
+    text-align: left;
+}
+
+/* STARS */
+.stars-sm {
+    width: 6rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-stars-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.verified {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+/* ARROWS */
+.arrow {
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #9ca3af;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow:hover {
+    background: #e5e7eb;
+}
+
 
 /* ======== Media Queries ======== */
+
 @media screen and (max-width: 991px) {
     .global-padding {
         padding-left: 0rem;
@@ -433,6 +897,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
     .first-product {
         width: 100%;
         margin-bottom: 2rem;
@@ -440,5 +908,53 @@ body {
 
     .prod-card-image {
         height: 15rem;
+    }
+
+    /* ===== GLP Section ===== */
+    .glp-hero-inner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .glp-hero-content {
+        padding: 32px 24px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .prod-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .wegovy-product-wrapper {
+        flex-direction: column;
+        gap: .8rem;
+        margin-top: 2rem;
+    }
+
+    .medication-cta-text {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: start;
+        align-items: start;
+        padding: 1rem 1rem;
+    }
+
+    .medication-cta-text p {
+        text-align: left;
+    }
+
+    .glp-hero {
+        padding: 0px;
+    }
+
+    .glp-hero-inner {
+        border-radius: 0px;
     }
 }
