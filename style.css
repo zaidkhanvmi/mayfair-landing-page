@@ -724,7 +724,10 @@ body {
     align-items: center;
 }
 
-.trust-footer-image {}
+
+.trustpilot-header img {
+    width: 10rem;
+}
 
 .trustpilot-header h2 {
     color: var(--primary-color);
@@ -732,7 +735,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     font-family: Gilroy, Arial, sans-serif;
-    font-size: 2.31em;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -744,6 +747,14 @@ body {
     gap: 1rem;
     max-width: 72rem;
     margin: 0 auto 2rem;
+}
+
+.trust-footer-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 /* TRACK */
@@ -806,6 +817,114 @@ body {
     background: #e5e7eb;
 }
 
+/* ======== Forth Section ======== */
+
+/* WRAPPER */
+.eligibility-wrap {
+    padding: 4rem 1.5rem;
+    background: #f4f7f6;
+}
+
+/* CARD */
+.eligibility-card {
+    position: relative;
+    max-width: 75rem;
+    margin: 0 auto;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 24rem;
+    background-image: url("./assets/eligibility.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eligibility-content {
+    z-index: 222;
+    color: white;
+    padding: 2rem 3rem;
+    max-width: 32rem;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.81rem;
+}
+
+
+.eligibility-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #0f3a67;
+    padding: 0.875rem 1.75rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.eligibility-overlay {
+    z-index: 2;
+    background-image: linear-gradient(106deg, #0f3c6c 20%, #0f3c6c00 68%);
+    position: absolute;
+    inset: 0%;
+}
+
+@media (max-width: 768px) {
+
+    .eligibility-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        background: none;
+        /* kill desktop bg logic */
+    }
+
+    /* IMAGE ON TOP */
+    .eligibility-media {
+        order: 1;
+        height: 16rem;
+        background-image: url("./assets/eligibility.png");
+        background-size: cover;
+        background-position: right;
+    }
+
+    /* CONTENT BELOW WITH FULL DARK BG */
+    .eligibility-content {
+        order: 2;
+
+        background: #0f3c6c;
+        /* FULL dark blue */
+        padding: 2.5rem 1.75rem 3rem;
+
+        margin-left: 0;
+        max-width: 100%;
+        color: #fff;
+    }
+
+    /* REMOVE OVERLAY COMPLETELY ON MOBILE */
+    .eligibility-overlay {
+        display: none;
+    }
+
+    /* TEXT SCALE */
+    .eligibility-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .eligibility-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    .eligibility-btn {
+        margin-top: 0.75rem;
+    }
+}
 
 /* ======== Media Queries ======== */
 
