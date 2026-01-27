@@ -879,7 +879,7 @@ body {
 
 /* LAYOUT */
 .faq-container {
-    max-width: 75rem;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -974,7 +974,7 @@ body {
 }
 
 .mayfair-footer-container {
-    max-width: 90rem;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1529,6 +1529,18 @@ body {
         padding-right: 10rem;
     }
 
+    .product-page-logo {
+        width: 20rem;
+    }
+
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .weight-care-header span {
+        font-size: 1.5rem;
+    }
+
     .wegovy-product-wrapper {
         gap: 1.5rem;
     }
@@ -1662,53 +1674,90 @@ body {
     /* GPL Section */
     .eligibility-card {
         max-width: 100%;
-        min-height: 30rem;
+        min-height: 50rem;
+    }
+
+    .eligibility-content {
+        padding: 0rem 0rem;
+        margin-left: 10rem;
+        max-width: 52rem;
+        gap: 1.5rem;
+    }
+
+    .eligibility-title {
+        font-size: 4.5rem;
+    }
+
+    .eligibility-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .eligibility-btn {
+        font-size: 1.8rem;
+    }
+
+    /* Faqs */
+    .faq-title {
+        font-size: 3.5rem;
     }
 
     .faq-question {
-        font-size: 1.4rem;
+        font-size: 2rem;
+    }
+
+    .faq-answer p {
+        font-size: 1.5rem;
     }
 
     .faq-help {
-        font-size: 1.1rem;
+        font-size: 1.9rem;
     }
 
     /* Footer */
     .mayfair-footer-logo {
-        max-width: 15rem;
+        max-width: 25rem;
+    }
+
+    .mayfair-footer-address {
+        font-size: 1.8rem;
     }
 
     .mayfair-footer-reg h5 {
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
 
     .mayfair-footer-reg p {
-        font-size: 1rem;
-    }
-
-    .mayfair-footer-heading {
         font-size: 1.5rem;
     }
 
+    .mayfair-footer-heading {
+        font-size: 2rem;
+    }
+
     .mayfair-footer-list a {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .mayfair-footer-copyright-images img {
-        width: 6rem;
+        width: 10rem;
     }
 
     .mayfair-footer-copyright p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: var(--subtext);
     }
 
     .mayfair-footer-socials a {
-        padding: 0.5rem 0.2rem;
+        padding: 1rem 1rem;
     }
 
     .mayfair-footer-socials a svg {
         width: 2rem;
-        height: 1.5rem;
+        height: 2rem;
+    }
+
+    .mayfair-footer-btn {
+        padding: 1.5rem 2rem;
+        font-size: 2rem;
     }
 }
