@@ -1340,6 +1340,47 @@ body {
         font-size: 14px;
     }
 
+    /* First Page */
+    .nav-logo {
+        width: 10rem;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .left-hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left-hero-content p {
+        font-size: 1rem;
+    }
+
+    .right-hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .right-cta-para {
+        font-size: 1rem;
+    }
+
+    .right-cta-btn {
+        width: 100%;
+    }
+
+    .right-cta-btn span {
+        font-size: 1rem;
+    }
+
+    .right-cta-svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* First page code above */
     .prod-container {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
