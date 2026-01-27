@@ -130,7 +130,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     font-family: Gilroy, Arial, sans-serif;
-    font-size: 3.75rem;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 1.1;
 }
@@ -1349,6 +1349,10 @@ body {
         font-size: 1.8rem;
     }
 
+    .left-hero {
+        padding: 8rem 0 2rem;
+    }
+
     .left-hero-content {
         padding-left: 20px;
         padding-right: 20px;
@@ -1633,19 +1637,28 @@ body {
         width: 20rem;
     }
 
-    .left-hero-content p {
-        font-size: 1.5rem;
+    .hero-heading {
+        font-size: 4rem;
     }
 
     .left-star img {
-        width: 10rem;
+        width: 15rem;
+    }
+
+    .right-hero {
+        padding-left: 1rem;
+    }
+
+    .left-hero-content p {
+        font-size: 1.9rem;
     }
 
     .right-cta-para {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
-    /* First Page */
+    /* First Page end here */
+
     .prod-container {
         padding-left: 10rem;
         padding-right: 10rem;
