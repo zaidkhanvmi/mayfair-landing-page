@@ -583,6 +583,55 @@
 
     </section>
 
+    <!-- ======= Faq's Section =========  -->
+
+    <section class="faq-wrap">
+        <div class="faq-container">
+
+            <!-- LEFT -->
+            <div class="faq-intro">
+                <h2 class="faq-title">
+                    Your questions,<br />
+                    answered.
+                </h2>
+
+                <p class="faq-help">
+                    Need help?
+                    <a href="#" class="faq-link">Get in touch with us here →</a>
+                </p>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="faq-list">
+
+                <!-- ITEM (OPEN) -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is medication cost included?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You only pay for the treatment you choose.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I buy Wegovy for weight loss online?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can complete an online consultation and, if approved, your treatment will be delivered to
+                            your door.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Footer-Section =========== -->
 
     <script>
         const tabs = document.querySelectorAll('.prod-tab');
@@ -608,6 +657,24 @@
 
         prev.addEventListener("click", () => {
             track.scrollBy({ left: -CARD_WIDTH, behavior: "smooth" });
+        });
+
+        // FAQ 
+        document.querySelectorAll(".faq-question").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const item = btn.parentElement;
+                const open = item.classList.contains("active");
+
+                document.querySelectorAll(".faq-item").forEach(i => {
+                    i.classList.remove("active");
+                    i.querySelector(".faq-icon").textContent = "+";
+                });
+
+                if (!open) {
+                    item.classList.add("active");
+                    btn.querySelector(".faq-icon").textContent = "−";
+                }
+            });
         });
     </script>
 </body>

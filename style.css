@@ -874,56 +874,99 @@ body {
     inset: 0%;
 }
 
-@media (max-width: 768px) {
+/* ======== Faq's-Section ============= */
+/* WRAPPER */
+.faq-wrap {
+    padding: 5rem 1.5rem;
+    background: #f7faf9;
+}
 
-    .eligibility-card {
-        grid-template-columns: 1fr;
-        min-height: auto;
-        background: none;
-        /* kill desktop bg logic */
-    }
+/* LAYOUT */
+.faq-container {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+}
 
-    /* IMAGE ON TOP */
-    .eligibility-media {
-        order: 1;
-        height: 16rem;
-        background-image: url("./assets/eligibility.png");
-        background-size: cover;
-        background-position: right;
-    }
+.faq-intro {
+    flex: 1;
+}
 
-    /* CONTENT BELOW WITH FULL DARK BG */
-    .eligibility-content {
-        order: 2;
+/* LEFT */
+.faq-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    color: #0f172a;
+}
 
-        background: #0f3c6c;
-        /* FULL dark blue */
-        padding: 2.5rem 1.75rem 3rem;
+.faq-help {
+    font-size: 1rem;
+    color: #475569;
+}
 
-        margin-left: 0;
-        max-width: 100%;
-        color: #fff;
-    }
+.faq-link {
+    color: #0f3c6c;
+    font-weight: 600;
+    text-decoration: underline;
+}
 
-    /* REMOVE OVERLAY COMPLETELY ON MOBILE */
-    .eligibility-overlay {
-        display: none;
-    }
+/* RIGHT */
+.faq-list {
+    flex: 1;
+    border-top: 0.0625rem solid #cbd5e1;
+}
 
-    /* TEXT SCALE */
-    .eligibility-title {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
+/* ITEM */
+.faq-item {
+    border-bottom: 0.0625rem solid #cbd5e1;
+}
 
-    .eligibility-subtitle {
-        font-size: 0.95rem;
-        line-height: 1.55;
-    }
+.faq-question {
+    width: 100%;
+    padding: 1.75rem 0;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0f172a;
+    cursor: pointer;
+}
 
-    .eligibility-btn {
-        margin-top: 0.75rem;
-    }
+.faq-icon {
+    font-size: 1.5rem;
+    color: #0f3c6c;
+    line-height: 1;
+}
+
+/* ANSWER */
+.faq-answer {
+    display: none;
+    padding-bottom: 1.75rem;
+}
+
+.faq-answer p {
+    font-size: 1rem;
+    color: #334155;
+    line-height: 1.6;
+    max-width: 36rem;
+}
+
+/* OPEN STATE */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-icon {
+    content: "−";
 }
 
 /* ======== Media Queries ======== */
@@ -1037,6 +1080,58 @@ body {
 
     .glp-hero-content {
         padding: 32px 24px;
+    }
+
+    /* Eligibility Section */
+    .eligibility-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        background: none;
+    }
+
+    .eligibility-media {
+        order: 1;
+        height: 16rem;
+        background-image: url("./assets/eligibility.png");
+        background-size: cover;
+        background-position: right;
+    }
+
+    .eligibility-content {
+        order: 2;
+        background: #0f3c6c;
+        padding: 2.5rem 1.75rem 3rem;
+        margin-left: 0;
+        max-width: 100%;
+        color: #fff;
+    }
+
+    .eligibility-overlay {
+        display: none;
+    }
+
+    .eligibility-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .eligibility-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    .eligibility-btn {
+        margin-top: 0.75rem;
+    }
+
+    /* ====== Faq Section ====== */
+    .faq-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .faq-title {
+        font-size: 2.25rem;
     }
 
 }
