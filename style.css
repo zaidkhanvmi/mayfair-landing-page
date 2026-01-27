@@ -1238,6 +1238,14 @@ body {
     .prod-card-image {
         height: 18rem;
     }
+
+    .mayfair-footer-grid {
+        grid-template-columns: auto auto;
+    }
+
+    .mayfair-footer-reg {
+        grid-template-columns: auto auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1316,9 +1324,18 @@ body {
         font-size: 2.25rem;
     }
 
+    /* Footer */
+    .mayfair-footer-grid {
+        grid-template-columns: auto;
+    }
+
+    .mayfair-footer-reg {
+        grid-template-columns: auto;
+    }
+
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     html {
         font-size: 14px;
     }
@@ -1346,6 +1363,10 @@ body {
         padding: 1rem 1rem;
     }
 
+    .medication-cta-text h3 {
+        font-size: 1.5rem;
+    }
+
     .medication-cta-text p {
         text-align: left;
     }
@@ -1358,6 +1379,44 @@ body {
         border-radius: 0px;
     }
 
+    .glp-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .glp-hero-desc {
+        font-size: 0.9rem;
+    }
+
+    /* Trust section */
+    .trustpilot-header img {
+        width: 8rem;
+    }
+
+    .trustpilot-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .arrow {
+        width: 12rem;
+    }
+
+    .review-card {
+        padding: 1rem;
+    }
+
+    /* elgibility section */
+    .prod-container.eligibility-wrap {
+        padding: 0rem;
+    }
+
+    .eligibility-card {
+        border-radius: 0px;
+    }
+
+    .eligibility-title {
+        font-size: 1.5rem;
+    }
+
     /* Faq Section */
     .faq-container {
         align-items: start;
@@ -1365,6 +1424,10 @@ body {
 
     .faq-question {
         text-align: left;
+    }
+
+    .faq-title {
+        font-size: 1.25rem;
     }
 
     /* Footer */
@@ -1524,6 +1587,24 @@ body {
 }
 
 @media (min-width: 1920px) {
+
+    .nav-logo {
+        width: 20rem;
+    }
+
+    .left-hero-content p {
+        font-size: 1.5rem;
+    }
+
+    .left-star img {
+        width: 10rem;
+    }
+
+    .right-cta-para {
+        font-size: 1.5rem;
+    }
+
+    /* First Page */
     .prod-container {
         padding-left: 10rem;
         padding-right: 10rem;
