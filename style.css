@@ -1562,18 +1562,18 @@ body {
     }
 }
 
-/* @media (min-width: 1920px) {
+@media (min-width: 1920px) {
 
     .nav-logo {
-        width: 20rem;
+        width: 10rem;
     }
 
     .hero-heading {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .left-star img {
-        width: 15rem;
+        width: 10rem;
     }
 
     .right-hero {
@@ -1581,29 +1581,30 @@ body {
     }
 
     .left-hero-content p {
-        font-size: 1.9rem;
+        font-size: 1.2rem;
     }
 
     .right-cta-para {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-
 
     .prod-container {
         padding-left: 10rem;
         padding-right: 10rem;
     }
 
+    /* Second page */
+
     .product-page-logo {
-        width: 20rem;
+        width: 12rem;
     }
 
     .banner-text {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
     .weight-care-header span {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .wegovy-product-wrapper {
@@ -1611,69 +1612,69 @@ body {
     }
 
     .weight-care-header h1 {
-        font-size: 3.8rem;
-    }
-
-    .first-product {
-        max-width: 47rem;
-    }
-
-    .prod-card-image {
-        height: 35rem;
-    }
-
-    .product-content h3 {
         font-size: 3rem;
     }
 
+    .first-product {
+        width: 45.43%;
+    }
+
+    .prod-card-image {
+        height: 26.4rem;
+    }
+
+    .product-content h3 {
+        font-size: 2.2rem;
+    }
+
     .product-price-star p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .product-price-star div span:first-child {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .product-price-star div span:last-child {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .after-divider-text p {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .benefit-icon {
-        width: 2.16rem;
-        height: 2.16rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .benefit-text {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .prod-tab {
-        font-size: 1.7rem;
+        font-size: 1.11rem;
     }
 
     .prod-btn button {
-        padding: 1rem 1.85em;
-        font-size: 1.9rem;
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
     }
 
     .medication-cta-text h3 {
-        font-size: 3.5rem;
+        font-size: 2.21rem;
     }
 
     .medication-cta-text p {
-        font-size: 2rem;
+        font-size: 1.1rem;
     }
 
     .med-icon {
-        width: 2.8rem;
+        width: 1.5rem;
     }
 
     .medication-icon-wrapper p {
-        font-size: 1.9rem;
+        font-size: 1.2rem;
     }
 
     .glp-hero-content {
@@ -1685,25 +1686,25 @@ body {
     }
 
     .glp-hero-desc {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .glp-hero-content h1 {
-        font-size: 4rem;
+        font-size: 3.21rem;
     }
 
     .glp-hero-list li {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .glp-hero-list li>div {
-        width: 55px;
-        height: 55px;
+        width: 45px;
+        height: 45px;
     }
 
     .glp-hero-list li svg {
-        height: 2rem;
-        width: 2rem;
+        height: 1.1rem;
+        width: 1.1rem;
     }
 
     .trustpilot-header img {
@@ -1738,88 +1739,93 @@ body {
 
     .eligibility-card {
         max-width: 100%;
-        min-height: 50rem;
+        min-height: 37.5rem;
     }
 
     .eligibility-content {
         padding: 0rem 0rem;
-        margin-left: 10rem;
+        margin-left: 5rem;
         max-width: 52rem;
         gap: 1.5rem;
     }
 
     .eligibility-title {
-        font-size: 4.5rem;
+        font-size: 3.21rem;
     }
 
     .eligibility-subtitle {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .eligibility-btn {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
     }
 
     .faq-title {
-        font-size: 3.5rem;
+        font-size: 3.21rem;
     }
 
     .faq-question {
         font-size: 2rem;
+        font-size: 1.2rem;
+        text-align: left;
     }
 
     .faq-answer p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        text-align: left;
     }
 
     .faq-help {
-        font-size: 1.9rem;
+        font-size: 1.1rem;
     }
 
+    /* Footer */
+
     .mayfair-footer-logo {
-        max-width: 25rem;
+        max-width: 10rem;
     }
 
     .mayfair-footer-address {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
     }
 
     .mayfair-footer-reg h5 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .mayfair-footer-reg p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .mayfair-footer-heading {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .mayfair-footer-list a {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .mayfair-footer-copyright-images img {
-        width: 10rem;
+        width: 5rem;
     }
 
     .mayfair-footer-copyright p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         color: var(--subtext);
     }
 
     .mayfair-footer-socials a {
-        padding: 1rem 1rem;
+        padding: 0.5rem 0.5rem;
     }
 
     .mayfair-footer-socials a svg {
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .mayfair-footer-btn {
-        padding: 1.5rem 2rem;
-        font-size: 2rem;
+        padding: 1rem 1rem;
+        font-size: 1.1rem;
     }
-} */
+}
