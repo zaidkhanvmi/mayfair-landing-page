@@ -596,7 +596,7 @@ body {
 /* ============ GLP Sectio ========= */
 
 .glp-hero {
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
 }
 
 .glp-hero-inner {
@@ -702,7 +702,7 @@ body {
 
 /* WRAPPER */
 .eligibility-wrap {
-    padding: 4rem 1.5rem;
+    /* padding: 4rem 1.5rem; */
     background: #f4f7f6;
 }
 
@@ -715,7 +715,8 @@ body {
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 24rem;
+    /* min-height: 24rem; */
+    padding: 5.7rem;
     background-image: url("./assets/eligibility.png");
     background-size: cover;
     background-position: center;
@@ -725,17 +726,18 @@ body {
 .eligibility-content {
     z-index: 222;
     color: white;
-    padding: 2rem 3rem;
+    padding: 1.11rem 0rem;
     max-width: 32rem;
     margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.81rem;
+    gap: 1.15rem;
 }
 
 .eligibility-title {
     font-size: 2.33rem;
+    line-height: 1;
 }
 
 .eligibility-btn {
@@ -857,8 +859,12 @@ body {
 
 .mayfair-footer {
     background: #eef7f4;
-    padding: clamp(3rem, 5vw, 6rem) 3rem;
+    /* padding: clamp(3rem, 5vw, 6rem) 3rem; */
     font-family: system-ui, sans-serif;
+}
+
+.prod-container.mayfair-footer {
+    padding: 5rem 5rem;
 }
 
 .mayfair-footer-container {
@@ -1042,6 +1048,10 @@ body {
 /* ======== Media Queries ======== */
 
 @media screen and (max-width: 991px) {
+    .prod-container {
+        padding: 2rem 3rem;
+    }
+
     .global-padding {
         padding-left: 0rem;
         padding-right: 0rem;
@@ -1112,6 +1122,15 @@ body {
     .half-hero-bg {
         display: none;
     }
+
+    .mayfair-footer-grid {
+        grid-template-columns: auto auto;
+    }
+
+    /* Footer */
+    .prod-container.mayfair-footer {
+        padding: 5rem 2.5rem;
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
@@ -1141,6 +1160,10 @@ body {
         font-size: 15px;
     }
 
+    .prod-container {
+        padding: 2rem 2.5rem;
+    }
+
     .first-product {
         width: 100%;
         margin-bottom: 2rem;
@@ -1163,16 +1186,26 @@ body {
     /* Eligibility Section */
     .eligibility-card {
         grid-template-columns: 1fr;
+        padding: 0;
         min-height: auto;
-        background: none;
+        background-image: none;
+        /* kill bg image */
     }
 
-    .eligibility-media {
-        order: 1;
-        height: 16rem;
+    /* Mobile image block */
+    .eligibility-card::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 18rem;
         background-image: url("./assets/eligibility.png");
         background-size: cover;
         background-position: right;
+    }
+
+    .eligibility-overlay {
+        display: none;
+        /* no overlay needed on mobile */
     }
 
     .eligibility-content {
@@ -1339,11 +1372,13 @@ body {
 
     /* elgibility section */
     .prod-container.eligibility-wrap {
-        padding: 0rem;
+        padding: 20px 20px;
     }
 
     .eligibility-card {
-        border-radius: 0px;
+        overflow: hidden;
+        display: grid;
+        padding: 0;
     }
 
     .eligibility-title {
@@ -1353,6 +1388,10 @@ body {
     /* Faq Section */
     .faq-container {
         align-items: start;
+        padding: auto;
+        margin: 0px;
+        align-items: stretch;
+        max-width: 100%;
     }
 
     .faq-question {
@@ -1360,7 +1399,7 @@ body {
     }
 
     .faq-title {
-        font-size: 1.25rem;
+        font-size: 1.55rem;
     }
 
     /* Footer */
@@ -1377,6 +1416,10 @@ body {
         flex-direction: column;
         align-items: center;
         flex-direction: column-reverse;
+    }
+
+    .prod-container.mayfair-footer {
+        padding: 5rem 20px;
     }
 }
 
