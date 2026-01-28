@@ -1442,7 +1442,7 @@ body {
     } */
 
     .product-content h3 {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
     .product-price-star p {
@@ -1528,6 +1528,10 @@ body {
     }
 
     /* Footer */
+    .prod-container.mayfair-footer {
+        padding: 8rem 8rem;
+    }
+
     .mayfair-footer-logo {
         max-width: 10rem;
     }
@@ -1567,7 +1571,7 @@ body {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1940px) {
 
     .nav-logo {
         width: 10rem;
@@ -1582,7 +1586,7 @@ body {
     }
 
     .right-hero {
-        padding-left: 1rem;
+        padding-left: 5rem;
     }
 
     .left-hero-content p {
@@ -1621,15 +1625,19 @@ body {
     }
 
     .first-product {
-        width: 45.43%;
+        width: 30%;
     }
 
     .prod-card-image {
-        height: 26.4rem;
+        height: 30rem;
+    }
+
+    .product-content {
+        padding: 3.9rem;
     }
 
     .product-content h3 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .product-price-star p {
@@ -1648,9 +1656,13 @@ body {
         font-size: 1.2rem;
     }
 
+    .prod-benefits h3 {
+        font-size: 1.5rem;
+    }
+
     .benefit-icon {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1rem;
+        height: 1rem;
     }
 
     .benefit-text {
@@ -1744,7 +1756,7 @@ body {
 
     .eligibility-card {
         max-width: 100%;
-        min-height: 37.5rem;
+        min-height: 52rem;
     }
 
     .eligibility-content {
@@ -1786,6 +1798,9 @@ body {
     }
 
     /* Footer */
+    .prod-container.mayfair-footer {
+        padding: 10rem 10rem;
+    }
 
     .mayfair-footer-logo {
         max-width: 10rem;
