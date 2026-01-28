@@ -1433,79 +1433,83 @@ body {
         gap: 1.5rem;
     }
 
-    .first-product {
+    /* .first-product {
         max-width: 38rem;
     }
 
     .prod-card-image {
         height: 28rem;
-    }
+    } */
 
     .product-content h3 {
-        font-size: 2rem;
+        font-size: 0.9rem;
     }
 
     .product-price-star p {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 
     .product-price-star div span:first-child {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .product-price-star div span:last-child {
-        font-size: 1.2rem;
+        font-size: 1.13rem;
     }
 
     .after-divider-text p {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .benefit-text {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .prod-tab {
-        font-size: 1.1rem;
+        font-size: 0.7rem;
     }
 
     .prod-btn button {
         padding: 1rem 1.85em;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .medication-cta-text h3 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .medication-cta-text p {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .med-icon {
-        width: 2.1rem;
+        width: 1.6rem;
     }
 
     .medication-icon-wrapper p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+    }
+
+    .glp-hero-inner {
+        height: 43.8rem;
     }
 
     .glp-hero-desc {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .glp-hero-list li {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
 
     .glp-hero-list li>div {
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
     }
 
     .glp-hero-list li svg {
-        height: 1.8rem;
-        width: 1.8rem;
+        height: 1.1rem;
+        width: 1.1rem;
     }
 
     /* GPL Section */
@@ -1515,7 +1519,8 @@ body {
     }
 
     .faq-question {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        text-align: left;
     }
 
     .faq-help {
@@ -1524,7 +1529,7 @@ body {
 
     /* Footer */
     .mayfair-footer-logo {
-        max-width: 15rem;
+        max-width: 10rem;
     }
 
     .mayfair-footer-reg h5 {
@@ -1532,23 +1537,23 @@ body {
     }
 
     .mayfair-footer-reg p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .mayfair-footer-heading {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .mayfair-footer-list a {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .mayfair-footer-copyright-images img {
-        width: 6rem;
+        width: 4rem;
     }
 
     .mayfair-footer-copyright p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: var(--subtext);
     }
 
@@ -1557,8 +1562,8 @@ body {
     }
 
     .mayfair-footer-socials a svg {
-        width: 2rem;
-        height: 1.5rem;
+        width: 1.5rem;
+        height: 1rem;
     }
 }
 
