@@ -14,6 +14,13 @@ html {
     font-size: 16px;
 }
 
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* ========= Global Styles =========== */
 
 body {
@@ -206,7 +213,7 @@ body {
     flex: none;
     justify-content: center;
     align-items: center;
-    width: 1.875rem;
+    width: 1.85rem;
 }
 
 .right-hero-note {
@@ -237,7 +244,7 @@ body {
 
 .banner-text {
     font-family: Inter, Arial, sans-serif;
-    font-size: .81rem;
+    font-size: .7rem;
     font-weight: 600;
     white-space: nowrap;
     animation: scroll 10s linear infinite;
@@ -259,7 +266,7 @@ body {
 }
 
 .product-page-logo {
-    width: 150px;
+    width: 140px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 0;
@@ -267,6 +274,10 @@ body {
 
 .product-first-section {
     padding-top: 1rem;
+}
+
+.prod-container.product-page {
+    padding-top: 1.7rem;
 }
 
 .weight-care-section {
@@ -346,7 +357,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 2.31rem;
+    padding: 1.94rem;
     overflow: hidden;
 }
 
@@ -367,7 +378,7 @@ body {
 
 .product-price-star p {
     font-family: Inter, Arial, sans-serif;
-    font-size: 1.04rem;
+    font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5;
 }
@@ -376,13 +387,13 @@ body {
     color: #007f4e;
     margin-right: .5em;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .product-price-star div span:last-child {
     color: red;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .divider {
@@ -396,7 +407,7 @@ body {
 .after-divider-text p {
     color: var(--subtext);
     margin-bottom: 1.16rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .prod-benefits {}
@@ -688,7 +699,7 @@ body {
 
 /* RIGHT IMAGE */
 .glp-hero-image {
-    flex: 1.3;
+    flex: 1;
     height: 100%;
 }
 
@@ -704,7 +715,6 @@ body {
 /* WRAPPER */
 .eligibility-wrap {
     /* padding: 4rem 1.5rem; */
-    background: #f4f7f6;
 }
 
 /* CARD */
@@ -765,7 +775,6 @@ body {
 /* WRAPPER */
 .faq-wrap {
     padding: 5rem 1.5rem;
-    background: #f7faf9;
 }
 
 /* LAYOUT */
@@ -1048,538 +1057,10 @@ body {
 
 /* ======== Media Queries ======== */
 
-@media screen and (max-width: 991px) {
-    .prod-container {
-        padding: 2rem 3rem;
-    }
-
-    .global-padding {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    .navbar {
-        padding-left: 5.8125rem;
-    }
-
-    .hero-wrapper {
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: center
-    }
-
-    .hero-heading {
-        font-size: 3rem;
-    }
-
-    .half-hero {
-        width: 100%;
-        max-width: 782px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 5.8125rem;
-        padding-right: 5.8125rem;
-    }
-
-    .left-hero {
-        background-color: #e6f3f1;
-        max-width: none;
-        padding: 6.75rem 0 2rem;
-    }
-
-    .left-hero-content {
-        max-width: 782px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 0;
-        padding-left: 5.81rem;
-        padding-right: 5.81rem;
-    }
-
-    .left-hero-arrow {
-        right: 0px;
-        bottom: -250px;
-    }
-
-    .left-hero-arrow img {
-        transform: rotateY(-180deg)rotate(26deg);
-    }
-
-    .right-hero {
-        padding-top: 4.5rem;
-        padding-bottom: 6rem;
-        padding-left: 5.8125rem;
-    }
-
-    .right-hero-cta {
-        width: 100%;
-        padding: 2rem 2.5rem;
-    }
-
-    .right-cta-btn {
-        width: 24rem;
-    }
-
-    .half-hero-bg {
-        display: none;
-    }
-
-    .mayfair-footer-grid {
-        grid-template-columns: auto auto;
-    }
-
-    /* Footer */
-    .prod-container.mayfair-footer {
-        padding: 5rem 2.5rem;
-    }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 992px) {
-    .right-hero {
-        padding-left: 3rem;
-    }
-
-    .first-product {
-        width: 28rem;
-    }
-
-    .prod-card-image {
-        height: 18rem;
-    }
-
-    .mayfair-footer-grid {
-        grid-template-columns: auto auto;
-    }
-
-    .mayfair-footer-reg {
-        grid-template-columns: auto auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    html {
-        font-size: 15px;
-    }
-
-    .prod-container {
-        padding: 2rem 2.5rem;
-    }
-
-    .first-product {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .prod-card-image {
-        height: 15rem;
-    }
-
-    /* ===== GLP Section ===== */
-    .glp-hero-inner {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .glp-hero-content {
-        padding: 32px 24px;
-    }
-
-    /* Eligibility Section */
-    .eligibility-card {
-        grid-template-columns: 1fr;
-        padding: 0;
-        min-height: auto;
-        background-image: none;
-        /* kill bg image */
-    }
-
-    /* Mobile image block */
-    .eligibility-card::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 18rem;
-        background-image: url("./assets/eligibility.png");
-        background-size: cover;
-        background-position: right;
-    }
-
-    .eligibility-overlay {
-        display: none;
-        /* no overlay needed on mobile */
-    }
-
-    .eligibility-content {
-        order: 2;
-        background: #0f3c6c;
-        padding: 2.5rem 1.75rem 3rem;
-        margin-left: 0;
-        max-width: 100%;
-        color: #fff;
-    }
-
-    .eligibility-overlay {
-        display: none;
-    }
-
-    .eligibility-title {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-
-    .eligibility-subtitle {
-        font-size: 0.95rem;
-        line-height: 1.55;
-    }
-
-    .eligibility-btn {
-        margin-top: 0.75rem;
-    }
-
-    /* ====== Faq Section ====== */
-    .faq-container {
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .faq-title {
-        font-size: 2.25rem;
-    }
-
-    /* Footer */
-    .mayfair-footer-grid {
-        grid-template-columns: auto;
-    }
-
-    .mayfair-footer-reg {
-        grid-template-columns: auto;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    html {
-        font-size: 14px;
-    }
-
-    /* First Page */
-    .nav-logo {
-        width: 10rem;
-    }
-
-    .hero-heading {
-        font-size: 1.8rem;
-    }
-
-    .left-hero {
-        padding: 8rem 0 2rem;
-    }
-
-    .left-hero-content {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .left-hero-content p {
-        font-size: 1rem;
-    }
-
-    .right-hero {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .right-cta-para {
-        font-size: 1rem;
-    }
-
-    .right-cta-btn {
-        width: 100%;
-    }
-
-    .right-cta-btn span {
-        font-size: 1rem;
-    }
-
-    .right-cta-svg {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    /* First page code above */
-    .prod-container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    .weight-care-header h1 {
-        font-size: 1.7rem;
-    }
-
-    .wegovy-product-wrapper {
-        flex-direction: column;
-        gap: .8rem;
-        margin-top: 2rem;
-    }
-
-    .medication-cta-text {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: start;
-        align-items: start;
-        padding: 1rem 1rem;
-    }
-
-    .medication-cta-text h3 {
-        font-size: 1.5rem;
-    }
-
-    .medication-cta-text p {
-        text-align: left;
-    }
-
-    .glp-hero {
-        padding: 0px;
-    }
-
-    .glp-hero-inner {
-        border-radius: 0px;
-    }
-
-    .glp-hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .glp-hero-desc {
-        font-size: 0.9rem;
-    }
-
-    /* Trust section */
-    .trustpilot-header img {
-        width: 8rem;
-    }
-
-    .trustpilot-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .arrow {
-        width: 12rem;
-    }
-
-    .review-card {
-        padding: 1rem;
-    }
-
-    /* elgibility section */
-    .prod-container.eligibility-wrap {
-        padding: 20px 20px;
-    }
-
-    .eligibility-card {
-        overflow: hidden;
-        display: grid;
-        padding: 0;
-    }
-
-    .eligibility-title {
-        font-size: 1.5rem;
-    }
-
-    /* Faq Section */
-    .faq-container {
-        align-items: start;
-        padding: auto;
-        margin: 0px;
-        align-items: stretch;
-        max-width: 100%;
-    }
-
-    .faq-question {
-        text-align: left;
-    }
-
-    .faq-title {
-        font-size: 1.55rem;
-    }
-
-    /* Footer */
-    .mayfair-footer-grid {
-        grid-template-columns: auto;
-    }
-
-    .mayfair-footer-reg {
-        grid-template-columns: auto;
-        gap: 1.5rem;
-    }
-
-    .mayfair-footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-
-    .prod-container.mayfair-footer {
-        padding: 5rem 20px;
-    }
-}
-
-@media (min-width: 1445px) {
-    .prod-container {
-        padding-left: 8rem;
-        padding-right: 8rem;
-    }
-
-    .wegovy-product-wrapper {
-        gap: 1.5rem;
-    }
-
-    /* .first-product {
-        max-width: 38rem;
-    }
-
-    .prod-card-image {
-        height: 28rem;
-    } */
-
-    .product-content h3 {
-        font-size: 1.5rem;
-    }
-
-    .product-price-star p {
-        font-size: 0.9rem;
-    }
-
-    .product-price-star div span:first-child {
-        font-size: 0.9rem;
-    }
-
-    .product-price-star div span:last-child {
-        font-size: 1.13rem;
-    }
-
-    .after-divider-text p {
-        font-size: 0.9rem;
-    }
-
-    .benefit-text {
-        font-size: 0.9rem;
-    }
-
-    .prod-tab {
-        font-size: 0.7rem;
-    }
-
-    .prod-btn button {
-        padding: 1rem 1.85em;
-        font-size: 0.9rem;
-    }
-
-    .medication-cta-text h3 {
-        font-size: 1.7rem;
-    }
-
-    .medication-cta-text p {
-        font-size: 0.8rem;
-    }
-
-    .med-icon {
-        width: 1.6rem;
-    }
-
-    .medication-icon-wrapper p {
-        font-size: 0.9rem;
-    }
-
-    .glp-hero-inner {
-        height: 43.8rem;
-    }
-
-    .glp-hero-desc {
-        font-size: 0.8rem;
-    }
-
-    .glp-hero-list li {
-        font-size: 0.8rem;
-    }
-
-    .glp-hero-list li>div {
-        width: 35px;
-        height: 35px;
-    }
-
-    .glp-hero-list li svg {
-        height: 1.1rem;
-        width: 1.1rem;
-    }
-
-    /* GPL Section */
-    .eligibility-card {
-        max-width: 100%;
-        min-height: 30rem;
-    }
-
-    .faq-question {
-        font-size: 1.1rem;
-        text-align: left;
-    }
-
-    .faq-help {
-        font-size: 1.1rem;
-    }
-
-    /* Footer */
-    .prod-container.mayfair-footer {
-        padding: 8rem 8rem;
-    }
-
-    .mayfair-footer-logo {
-        max-width: 10rem;
-    }
-
-    .mayfair-footer-reg h5 {
-        font-size: 1.1rem;
-    }
-
-    .mayfair-footer-reg p {
-        font-size: 0.9rem;
-    }
-
-    .mayfair-footer-heading {
-        font-size: 1rem;
-    }
-
-    .mayfair-footer-list a {
-        font-size: 0.9rem;
-    }
-
-    .mayfair-footer-copyright-images img {
-        width: 4rem;
-    }
-
-    .mayfair-footer-copyright p {
-        font-size: 0.8rem;
-        color: var(--subtext);
-    }
-
-    .mayfair-footer-socials a {
-        padding: 0.5rem 0.2rem;
-    }
-
-    .mayfair-footer-socials a svg {
-        width: 1.5rem;
-        height: 1rem;
-    }
-}
-
-@media (min-width: 1940px) {
+@media (min-width: 1920px) {
 
     .nav-logo {
         width: 10rem;
-    }
-
-    .hero-heading {
-        font-size: 3rem;
     }
 
     .left-star img {
@@ -1848,5 +1329,605 @@ body {
     .mayfair-footer-btn {
         padding: 1rem 1rem;
         font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .prod-container {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .banner-text {
+        font-size: 0.9rem;
+    }
+
+    .wegovy-product-wrapper {
+        gap: 1.5rem;
+    }
+
+    .first-product {
+        width: 34rem;
+    }
+
+    .prod-card-image {
+        height: 25.5rem;
+    }
+
+    .product-content {
+        padding: 2.6rem;
+    }
+
+    .product-content h3 {
+        font-size: 2.1rem;
+    }
+
+    .product-price-star p {
+        font-size: 1.15rem;
+    }
+
+    .product-price-star div span:first-child {
+        font-size: 1.15rem;
+    }
+
+    .product-price-star div span:last-child {
+        font-size: 1.4rem;
+    }
+
+    .after-divider-text p {
+        font-size: 1.12rem;
+    }
+
+    .prod-benefits h3 {
+        font-size: 1.15rem;
+    }
+
+    .benefit-text {
+        font-size: 1.15rem;
+    }
+
+    .prod-tab {
+        font-size: 1rem;
+    }
+
+    .prod-btn button {
+        padding: 1rem 1.85em;
+        font-size: 1rem;
+    }
+
+    .prod-price-wrapper h3 {
+        font-size: 1.15rem;
+    }
+
+    .prod-price-wrapper>div span:first-child {
+        font-size: 1.15rem;
+    }
+
+    .prod-price-wrapper>div span:last-child {
+        font-size: 1.4rem;
+    }
+
+    .medication-cta-text h3 {
+        font-size: 2.1rem;
+    }
+
+    .medication-cta-text p {
+        font-size: 1rem;
+    }
+
+    .med-icon {
+        width: 1.6rem;
+    }
+
+    .medication-icon-wrapper p {
+        font-size: 0.9rem;
+    }
+
+    .glp-hero-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .glp-hero-image {
+        flex: 1.3;
+    }
+
+    .glp-hero-inner {
+        height: 43.8rem;
+    }
+
+    .glp-hero-desc {
+        font-size: 1rem;
+    }
+
+    .glp-hero-list li {
+        font-size: 1rem;
+    }
+
+    .glp-hero-list li>div {
+        width: 37px;
+        height: 37px;
+    }
+
+    .glp-hero-list li svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    /* GPL Section */
+    .eligibility-card {
+        max-width: 100%;
+        min-height: 35rem;
+    }
+
+    .faq-title {
+        font-size: 3.2rem;
+    }
+
+    .faq-question {
+        font-size: 1.12rem;
+        text-align: left;
+    }
+
+    .faq-answer {
+        font-size: 1.12rem;
+    }
+
+    .faq-help {
+        font-size: 1.1rem;
+    }
+
+    .eligibility-title {
+        font-size: 3.2rem;
+    }
+
+    .eligibility-subtitle {
+        font-size: 1.12rem;
+    }
+
+    /* Footer */
+    .prod-container.mayfair-footer {
+        padding: 8rem 8rem;
+    }
+
+    .mayfair-footer-logo {
+        max-width: 10rem;
+    }
+
+    .mayfair-footer-reg h5 {
+        font-size: 1.4rem;
+    }
+
+    .mayfair-footer-reg p {
+        font-size: 1.12rem;
+    }
+
+    .mayfair-footer-heading {
+        font-size: 1.4rem;
+    }
+
+    .mayfair-footer-list a {
+        font-size: 1.12rem;
+    }
+
+    .mayfair-footer-copyright-images img {
+        width: 5rem;
+    }
+
+    .mayfair-footer-copyright p {
+        font-size: 1.12rem;
+        color: var(--subtext);
+    }
+
+    .mayfair-footer-socials a {
+        padding: 0.6rem 0.6rem;
+    }
+
+    .mayfair-footer-socials a svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .prod-container {
+        padding: 2rem 1.65rem;
+    }
+
+    .global-padding {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .navbar {
+        padding-left: 5.8125rem;
+    }
+
+    .hero-wrapper {
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .half-hero {
+        width: 100%;
+        max-width: 782px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5.8125rem;
+        padding-right: 5.8125rem;
+    }
+
+    .left-hero {
+        background-color: #e6f3f1;
+        max-width: none;
+        padding: 6.75rem 0 2rem;
+    }
+
+    .left-hero-content {
+        max-width: 782px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        padding-left: 5.81rem;
+        padding-right: 5.81rem;
+    }
+
+    .left-hero-arrow {
+        right: 0px;
+        bottom: -250px;
+    }
+
+    .left-hero-arrow img {
+        transform: rotateY(-180deg)rotate(26deg);
+    }
+
+    .right-hero {
+        padding-top: 4.5rem;
+        padding-bottom: 6rem;
+        padding-left: 5.8125rem;
+    }
+
+    .right-hero-cta {
+        width: 100%;
+        padding: 2rem 2.5rem;
+    }
+
+    .right-cta-btn {
+        width: 24rem;
+    }
+
+    .half-hero-bg {
+        display: none;
+    }
+
+    /* Second Page */
+    .first-product {
+        width: 100%;
+    }
+
+    .prod-card-image {
+        height: 18rem;
+    }
+
+    .eligibility-card {
+        padding: 4.5rem;
+    }
+
+    /* Footer */
+
+    .mayfair-footer-grid {
+        grid-template-columns: auto auto;
+    }
+
+    .prod-container.mayfair-footer {
+        padding: 5rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .prod-container {
+        padding: 2rem 2.5rem;
+    }
+
+    .first-product {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .prod-card-image {
+        height: 15rem;
+    }
+
+    .product-content {
+        padding: 1.5rem;
+    }
+
+    /* ===== GLP Section ===== */
+    .glp-hero-inner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .glp-hero-content {
+        padding: 32px 24px;
+    }
+
+    /* Eligibility Section */
+    .eligibility-card {
+        grid-template-columns: 1fr;
+        padding: 0;
+        min-height: auto;
+        background-image: none;
+        /* kill bg image */
+    }
+
+    /* Mobile image block */
+    .eligibility-card::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 18rem;
+        background-image: url("./assets/eligibility.png");
+        background-size: cover;
+        background-position: right;
+    }
+
+    .eligibility-overlay {
+        display: none;
+        /* no overlay needed on mobile */
+    }
+
+    .eligibility-content {
+        order: 2;
+        background: #0f3c6c;
+        padding: 2.5rem 1.75rem 3rem;
+        margin-left: 0;
+        max-width: 100%;
+        color: #fff;
+    }
+
+    .eligibility-overlay {
+        display: none;
+    }
+
+    .eligibility-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .eligibility-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    .eligibility-btn {
+        margin-top: 0.75rem;
+    }
+
+    /* ====== Faq Section ====== */
+    .faq-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .faq-title {
+        font-size: 2.25rem;
+    }
+
+    /* Footer */
+    .mayfair-footer-grid {
+        grid-template-columns: auto;
+    }
+
+    .mayfair-footer-reg {
+        grid-template-columns: auto;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* First Page */
+    .nav-logo {
+        width: 10rem;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .left-hero {
+        padding: 8rem 0 2rem;
+    }
+
+    .left-hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left-hero-content p {
+        font-size: 1rem;
+    }
+
+    .right-hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .right-cta-para {
+        font-size: 1rem;
+    }
+
+    .right-cta-btn {
+        width: 100%;
+    }
+
+    .right-cta-btn span {
+        font-size: 1rem;
+    }
+
+    .right-cta-svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* First page code above */
+    .prod-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .banner-text {
+        font-size: 0.9rem;
+    }
+
+    .weight-care-header span {
+        font-size: 1rem;
+    }
+
+    .prod-card-image {
+        height: 17rem;
+    }
+
+    .product-content {
+        padding: 1.5rem;
+    }
+
+    .weight-care-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-content h3 {
+        font-size: 1.43rem;
+    }
+
+    .prod-benefits h3 {
+        font-size: 0.9rem;
+    }
+
+    .benefit-text {
+        font-size: 0.95rem;
+    }
+
+    .prod-price-wrapper h3 {
+        font-size: 0.95rem;
+    }
+
+    .wegovy-product-wrapper {
+        flex-direction: column;
+        gap: .8rem;
+        margin-top: 2rem;
+    }
+
+    .medication-cta-text {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: start;
+        align-items: start;
+        padding: 1rem 1rem;
+    }
+
+    .medication-cta-text h3 {
+        font-size: 1.45rem;
+    }
+
+    .medication-cta-text p {
+        text-align: left;
+    }
+
+    .glp-hero {
+        padding: 0px;
+    }
+
+    .glp-hero-inner {
+        border-radius: 0px;
+    }
+
+    .glp-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .glp-hero-desc {
+        font-size: 0.9rem;
+    }
+
+    /* Trust section */
+    .trustpilot-header img {
+        width: 8rem;
+    }
+
+    .trustpilot-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .arrow {
+        width: 12rem;
+    }
+
+    .review-card {
+        padding: 1rem;
+    }
+
+    /* elgibility section */
+    .prod-container.eligibility-wrap {
+        padding: 20px 20px;
+    }
+
+    .eligibility-card {
+        overflow: hidden;
+        display: grid;
+        padding: 0;
+    }
+
+    .eligibility-title {
+        font-size: 1.5rem;
+    }
+
+    /* Faq Section */
+    .faq-container {
+        align-items: start;
+        padding: auto;
+        margin: 0px;
+        align-items: stretch;
+        max-width: 100%;
+    }
+
+    .faq-question {
+        text-align: left;
+    }
+
+    .faq-title {
+        font-size: 1.55rem;
+    }
+
+    /* Footer */
+    .mayfair-footer-grid {
+        grid-template-columns: auto;
+    }
+
+    .mayfair-footer-reg {
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+
+    .mayfair-footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .prod-container.mayfair-footer {
+        padding: 5rem 20px;
     }
 }
