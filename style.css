@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     --primary-color: #47317c;
     --subtext: #3f6389;
@@ -436,7 +440,7 @@ body {
 
 .benefit-icon {
     color: white;
-    background-color: var(--secondary);
+    background-color: var(--primary-color);
     border-radius: 100%;
     flex: none;
     justify-content: center;
@@ -772,12 +776,11 @@ body {
 }
 
 /* ======== Faq's-Section ============= */
-/* WRAPPER */
+
 .faq-wrap {
     padding: 5rem 1.5rem;
 }
 
-/* LAYOUT */
 .faq-container {
     max-width: 80%;
     margin: 0 auto;
@@ -792,7 +795,6 @@ body {
     flex: 1;
 }
 
-/* LEFT */
 .faq-title {
     font-size: 2.35rem;
     font-weight: 700;
@@ -812,15 +814,15 @@ body {
     text-decoration: underline;
 }
 
-/* RIGHT */
 .faq-list {
     flex: 1;
     border-top: 0.0625rem solid #cbd5e1;
 }
 
-/* ITEM */
 .faq-item {
     border-bottom: 0.0625rem solid #cbd5e1;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 .faq-question {
@@ -835,18 +837,22 @@ body {
     font-weight: 400;
     color: #0f172a;
     cursor: pointer;
+    transition: padding 0.3s ease-in-out;
 }
 
 .faq-icon {
     font-size: 1.5rem;
     color: #0f3c6c;
     line-height: 1;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* ANSWER */
 .faq-answer {
-    display: none;
-    padding-bottom: 1.75rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
 .faq-answer p {
@@ -856,14 +862,22 @@ body {
     line-height: 1.6;
 }
 
-/* OPEN STATE */
 .faq-item.active .faq-answer {
-    display: block;
+    max-height: 12rem;
+    opacity: 1;
+    padding-bottom: 1.75rem;
 }
 
 .faq-item.active .faq-icon {
     content: "−";
+    transform: rotate(90deg);
 }
+
+.faq-item.active .faq-question {
+    padding: 1.75rem 0;
+    transition: padding 0.3s ease-in-out;
+}
+
 
 /* ======= Mayfar Footer ========= */
 
@@ -1055,7 +1069,7 @@ body {
     height: 1rem;
 }
 
-/* ======== Media Queries ======== */
+/* ================ Media Queries ================ */
 
 @media (min-width: 1920px) {
 
@@ -1107,7 +1121,7 @@ body {
     }
 
     .first-product {
-        width: 30%;
+        width: 36rem;
     }
 
     .prod-card-image {
@@ -1338,8 +1352,17 @@ body {
         padding-right: 8rem;
     }
 
+    .benefit-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
     .banner-text {
         font-size: 0.9rem;
+    }
+
+    .weight-care-header h1 {
+        font-size: 2.8rem;
     }
 
     .wegovy-product-wrapper {
@@ -1420,7 +1443,12 @@ body {
     }
 
     .medication-icon-wrapper p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .prod-container.glp-hero {
+        margin-top: 5rem;
     }
 
     .glp-hero-content h1 {
@@ -1432,7 +1460,7 @@ body {
     }
 
     .glp-hero-inner {
-        height: 43.8rem;
+        height: 44rem;
     }
 
     .glp-hero-desc {

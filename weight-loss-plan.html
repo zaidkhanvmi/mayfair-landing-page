@@ -719,14 +719,17 @@
     <!-- ========== Scripting ========== -->
 
     <script>
-        const tabs = document.querySelectorAll('.prod-tab');
 
-        tabs[0].classList.add('active');
+        document.querySelectorAll('.first-product').forEach(product => {
+            const tabs = product.querySelectorAll('.prod-tab');
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
+            if (tabs.length) tabs[0].classList.add('active');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                });
             });
         });
 
@@ -749,7 +752,7 @@
             });
         });
     </script>
-    
+
 </body>
 
 </html>
