@@ -1462,7 +1462,7 @@ body {
 
     .eligibility-card {
         max-width: 100%;
-        min-height: 52rem;
+        min-height: 42rem;
     }
 
     .eligibility-content {
@@ -1505,7 +1505,7 @@ body {
 
     /* Footer */
     .prod-container.mayfair-footer {
-        padding: 10rem 10rem;
+        padding: 5rem 5rem;
     }
 
     .mayfair-footer-logo {
